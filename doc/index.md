@@ -34,5 +34,6 @@ This plugin provides access to the magnet sensor used on Google Cardboard
 
 ## Methods
 
-- navigator.magnetsensor.magnetTrigger
+- navigator.magnetsensor.magnetTrigger(onSuccess, onFail)
+- navigator.magnetsensor.stopSensor
 
