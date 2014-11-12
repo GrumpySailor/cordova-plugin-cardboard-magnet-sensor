@@ -56,7 +56,6 @@ public class MagnetSensor extends CordovaPlugin implements SensorEventListener {
     private int accuracy = SensorManager.SENSOR_STATUS_UNRELIABLE;
 
     private SensorManager mSensorManager;
-    private SensorManager sensorManager;    // Sensor manager
     private Sensor mSensor;
     private Sensor mMagnetometer;
     private ArrayList<float[]> mSensorData;
@@ -183,7 +182,7 @@ public class MagnetSensor extends CordovaPlugin implements SensorEventListener {
     private void stop() {
         stopTimeout();
         if (this.status != MagnetSensor.STOPPED) {
-            this.sensorManager.unregisterListener(this);
+            this.mSensorManager.unregisterListener(this);
         }
         this.setStatus(MagnetSensor.STOPPED);
         this.accuracy = SensorManager.SENSOR_STATUS_UNRELIABLE;

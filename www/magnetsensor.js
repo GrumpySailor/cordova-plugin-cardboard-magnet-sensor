@@ -26,6 +26,8 @@ function start() {
 function stop() {
     console.log('Stoping MagnetSensor')
     exec(null, null, "MagnetSensor", "stop", []);
+    winCallback = null;
+    failCallback = null;
     running = false;
 }
 
