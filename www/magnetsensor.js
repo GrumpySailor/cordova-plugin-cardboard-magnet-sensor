@@ -9,8 +9,8 @@ var winCallback, failCallback;
 
 // Tells native to start.
 function start() {
+    console.log('Starting MagnetSensor')
     exec(function(a) {
-        console.log('NEW MAGNET RECEIVED')  
         if(winCallback) {
             winCallback()
         }
@@ -24,6 +24,7 @@ function start() {
 
 // Tells native to stop.
 function stop() {
+    console.log('Stoping MagnetSensor')
     exec(null, null, "MagnetSensor", "stop", []);
     running = false;
 }
