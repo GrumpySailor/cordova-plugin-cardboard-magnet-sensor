@@ -34,6 +34,9 @@ var magnetsensor = {
         failCallback = errorCallback
         start();
     },
+    stopSensor: function() {
+        stop();
+    }
 };
 
 module.exports = magnetsensor;
