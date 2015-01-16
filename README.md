@@ -26,7 +26,7 @@ This plugin provides access to the magnet sensor used on Google Cardboard
 
 ## Installation
 
-    cordova plugin add https://github.com/marciopuga/cordova-plugin-cardboard-magnet-sensor.git
+    cordova plugin add https://github.com/GrumpySailor/cordova-plugin-cardboard-magnet-sensor.git
 
 ## Supported Platforms
 
